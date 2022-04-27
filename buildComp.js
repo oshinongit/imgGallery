@@ -1,7 +1,7 @@
 const main_container = document.getElementById("main_container");
 
-const sidebar1 = '<div id="sidebar"  class="d-flex flex-column flex-shrink-0 p-3 rounded text-white bg-dark" style="min-width: 150px;"><a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"><span class="fs-4">Menu</span></a><hr><ul class="nav nav-pills flex-column mb-auto"><li class="nav-item"><a id="homeNavLink" href="#" class="nav-link active" aria-current="page">List</a></li><li><a  href="#" id="dashNavLink" class="nav-link text-white">Dashboard</a></li></ul><hr><div class="dropdown"></div></div>'
-const sidebar2 = '<div id="sidebar2" class="d-flex flex-column flex-shrink-0 p-3 rounded text-white bg-dark" style="min-width: 150px;;"><a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"><span class="fs-4">Images</span></a><hr><ul class="nav nav-pills flex-column mb-auto"></ul></div>'
+const sidebar1 = '<div id="sidebar"  class="d-flex flex-column flex-shrink-0 p-3 rounded text-white bg-dark" style="min-width: 150px;"><a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"><span class="fs-1">Menu</span></a><hr><ul class="nav nav-pills flex-column mb-auto fs-2"><li class="nav-item"><a id="homeNavLink" href="#" class="nav-link active nav-item-custom" aria-current="page">Gallery</a></li><li><a href="#" id="dashNavLink" class="nav-link text-white nav-item-custom">Dashboard</a></li></ul><hr><div class="dropdown"></div></div>'
+const sidebar2 = '<div id="sidebar2" class="d-flex flex-column flex-shrink-0 p-3 rounded text-white bg-dark" style="min-width: 150px;;"><a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"><span class="fs-1">Images</span></a><hr><ul class="nav nav-pills flex-column mb-auto"></ul></div>'
 
 imgs_th = ["img1_th.jpg", "img2_th.jpg", "img3_th.jpg", "img4_th.jpg", "img5_th.jpg", "img6_th.jpg"]
 imgs = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg"]
@@ -97,8 +97,8 @@ function selectHome() {
     var home = document.getElementById("homeNavLink");
     var dash = document.getElementById("dashNavLink");
     var List = document.getElementById("sidebar2");
-    dash.setAttribute("class", "nav-link text-white");
-    home.setAttribute("class", "nav-link text-white active");
+    dash.setAttribute("class", "nav-link text-white nav-item-custom");
+    home.setAttribute("class", "nav-link text-white active nav-item-custom");
     List.classList.remove("clickHide");
     List.className += (" " + "clickShow");
 }
@@ -108,8 +108,8 @@ function selectDash() {
     var home = document.getElementById("homeNavLink");
     var dash = document.getElementById("dashNavLink");
     var List = document.getElementById("sidebar2");
-    home.setAttribute("class", "nav-link text-white");
-    dash.setAttribute("class", "nav-link text-white active");
+    home.setAttribute("class", "nav-link text-white nav-item-custom");
+    dash.setAttribute("class", "nav-link text-white active nav-item-custom");
     List.classList.remove("clickShow");
     List.className += (" " + "clickHide");
 }
