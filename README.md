@@ -12,6 +12,8 @@
 
 The current size of the two first buttons do not reflect this philosophy but I increased their size after testing on mobile as they felt to small to effectively use even if they better matched the design. They were basically the same size as the go button in the intial version. A future iteration of design might be to resize everything so that mobile usage is easier.
 
+Every image exists in two versions. One small thumbnail and one larger for better resolution. The switching of images is controlled by changing the source path.
+
 The base idea for the design is to keep regular margins between all components and stick to certain color choices that are also regularly occuring.
 
 **Code** Most of the code should be understandeable by itself. Some larger functions could perhaps have used more comments. The philosophy for the code is maximize modularity and keep small functions. This I feel makes it easier to work with and error localization becomes more effective. Especially if handing over the work to a person who was not involved in writing the code.
