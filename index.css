@@ -1,0 +1,16 @@
+.clickHide{
+    transition: 0.5s;
+    margin-top: 100px;
+    opacity: 0;
+  }
+
+.clickShow{
+    transition: 0.5s;
+    margin-top: 0px;
+    opacity: 1;
+  }
+
+.main_containerCustom {
+  max-width: 1600px;
+}
+
